@@ -1,0 +1,6 @@
+c:\users\orang\documents\visual studio 2017\Projects\FactoryPatterns\Invoce\bin\Debug\Invoce.exe.config
+c:\users\orang\documents\visual studio 2017\Projects\FactoryPatterns\Invoce\bin\Debug\Invoce.exe
+c:\users\orang\documents\visual studio 2017\Projects\FactoryPatterns\Invoce\bin\Debug\Invoce.pdb
+c:\users\orang\documents\visual studio 2017\Projects\FactoryPatterns\Invoce\obj\Debug\Invoce.csprojResolveAssemblyReference.cache
+c:\users\orang\documents\visual studio 2017\Projects\FactoryPatterns\Invoce\obj\Debug\Invoce.exe
+c:\users\orang\documents\visual studio 2017\Projects\FactoryPatterns\Invoce\obj\Debug\Invoce.pdb
