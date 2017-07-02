@@ -30,18 +30,19 @@ namespace Invoce
                 if (input == "-1") continue;
                 var amount = Convert.ToInt64(input);
                 var clientIndex = rnd.Next(0, 5);
-                var build = FactoryBuld.CreateBuild(buildType, amount);
+                var build = FactoryBuild.CreateBuild(buildType, amount);
                 if (build != null)
                     list[clientIndex].AddBuild(build);
                 else
                 {
-                    Console.WriteLine("---- buld is empty ----");
+                    Console.WriteLine("---- build type is empty or incorrect ----");
                 }
             }
             foreach (Client client in list)
             {
                 client.Print();
             }
+            Console.ReadKey();
 
 
         }

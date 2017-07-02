@@ -1,0 +1,6 @@
+C:\git\FactoryPatterns\Invoice\bin\Debug\Invoice.exe.config
+C:\git\FactoryPatterns\Invoice\bin\Debug\Invoice.exe
+C:\git\FactoryPatterns\Invoice\bin\Debug\Invoice.pdb
+C:\git\FactoryPatterns\Invoice\obj\Debug\Invoice.csprojResolveAssemblyReference.cache
+C:\git\FactoryPatterns\Invoice\obj\Debug\Invoice.exe
+C:\git\FactoryPatterns\Invoice\obj\Debug\Invoice.pdb

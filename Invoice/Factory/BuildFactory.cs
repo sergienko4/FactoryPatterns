@@ -4,19 +4,19 @@ using System;
 
 namespace Invoce.Factory
 {
-    public class FactoryBuld
+    public class FactoryBuild
     {
-        public static FactoryBuld InstanceFactory;
-        private FactoryBuld()
+        public static FactoryBuild InstanceFactory;
+        private FactoryBuild()
         {
 
         }
         /// <summary>
         /// create one instance for the application
         /// </summary>
-        static FactoryBuld()
+        static FactoryBuild()
         {
-            InstanceFactory = new FactoryBuld();
+            InstanceFactory = new FactoryBuild();
         }
         /// <summary>
         /// Create a build dependence on type 
@@ -35,14 +35,14 @@ namespace Invoce.Factory
                 case BuildType.Gaz:
                     build = new Gaz();
                     break;
-                case BuildType.Watter:
-                    build = new Watter();
+                case BuildType.Water:
+                    build = new Water();
                     break;
             }
             if (build != null)
             {
                 build.Amount = amount;
-                build.date = DateTime.Now;
+                build.Date = DateTime.Now;
                 return build;
             }
             return null;

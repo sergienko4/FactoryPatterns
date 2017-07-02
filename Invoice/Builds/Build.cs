@@ -8,7 +8,7 @@ namespace Invoce
     {
         public long Amount;
         public BuildType BuildType;
-        public DateTime date;
+        public DateTime Date;
         public DateTime PayUnTill { get; private set; }
 
 

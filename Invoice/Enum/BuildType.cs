@@ -2,7 +2,7 @@
 {
     public enum BuildType
     {
-        Watter,
+        Water,
         AC,
         Gaz
     }
