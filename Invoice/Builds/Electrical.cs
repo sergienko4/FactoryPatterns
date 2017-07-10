@@ -4,10 +4,9 @@ namespace Invoce.Builds
 {
     public class Electrical : Build
     {
-        public Electrical()
-        {
 
-            this.BuildType = BuildType.AC;
+        public Electrical(BuildType type, long amount):base(type,amount)
+        {
 
         }
     }

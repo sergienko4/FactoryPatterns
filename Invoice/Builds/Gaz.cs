@@ -4,9 +4,9 @@ namespace Invoce.Builds
 {
     public class Gaz : Build
     {
-        public Gaz()
+        public Gaz(BuildType type, long amount) : base(type, amount)
         {
-            this.BuildType = BuildType.Gaz;
+           
         }
 
 

@@ -11,6 +11,12 @@ namespace Invoce
         public DateTime Date;
         public DateTime PayUnTill { get; private set; }
 
+        public Build(BuildType type, long amount)
+        {
+            this.BuildType =type;
+            this.Amount = amount;
+            this.Date = DateTime.Now;
+        }
 
         public void Print()
         {

@@ -4,9 +4,8 @@ namespace Invoce.Builds
 {
     public class Water: Build
     {
-        public Water()
+        public Water(BuildType type, long amount) : base(type, amount)
         {
-            this.BuildType = BuildType.Water;
         }
     }
 }

@@ -30,7 +30,7 @@ namespace Invoce
                 if (input == "-1") continue;
                 var amount = Convert.ToInt64(input);
                 var clientIndex = rnd.Next(0, 5);
-                var build = FactoryBuild.CreateBuild(buildType, amount);
+                var build = FactoryBuild.InstanceFactory.CreateBuild(buildType, amount);
                 if (build != null)
                     list[clientIndex].AddBuild(build);
                 else

@@ -1,12 +1,20 @@
 ﻿using Invoce.Builds;
 using Invoce.Enum;
 using System;
+using System.Net.Sockets;
+using System.Runtime.CompilerServices;
+using System.Runtime.InteropServices;
 
 namespace Invoce.Factory
 {
     public class FactoryBuild
     {
-        public static FactoryBuild InstanceFactory;
+        private static FactoryBuild _instanceFactory;
+
+        public static FactoryBuild InstanceFactory
+        {
+            get { return _instanceFactory ?? (_instanceFactory = new FactoryBuild()); }
+        }
         private FactoryBuild()
         {
 
@@ -14,38 +22,28 @@ namespace Invoce.Factory
         /// <summary>
         /// create one instance for the application
         /// </summary>
-        static FactoryBuild()
-        {
-            InstanceFactory = new FactoryBuild();
-        }
         /// <summary>
         /// Create a build dependence on type 
         /// </summary>
         /// <param name="type">type of the build</param>
         /// <param name="amount">will be inside the build </param>
         /// <returns></returns>
-        public static Build CreateBuild(BuildType type, long amount)
+        public Build CreateBuild(BuildType type, long amount)
         {
             Build build = null;
             switch (type)
             {
                 case BuildType.AC:
-                    build = new Electrical();
+                    return new Electrical(type,amount);
                     break;
                 case BuildType.Gaz:
-                    build = new Gaz();
-                    break;
+                    return new Gaz(type, amount);
+                    
                 case BuildType.Water:
-                    build = new Water();
-                    break;
+                    return  new Water(type, amount);
+                default:
+                    return build;
             }
-            if (build != null)
-            {
-                build.Amount = amount;
-                build.Date = DateTime.Now;
-                return build;
-            }
-            return null;
         }
 
     }
